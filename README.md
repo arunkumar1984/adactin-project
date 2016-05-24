@@ -1,4 +1,4 @@
-# Basic-Project
+# Java-Project (Java-project branch)
 
 ##Warm up Day 04: Basic Project -- 05/23/2016
 To stock up various classes to be created during the course
