@@ -4,18 +4,29 @@ import java.io.*;
 import java.util.*;
 import java.util.regex.*;
 
+import org.apache.log4j.*;
+
 public class BasicTest {
 	// ArayList to hold test data
 	public static ArrayList<Object> tests = new ArrayList<Object>();
+	private static Logger log = Logger.getLogger(BasicTest.class);
 
 	// StringBuilder class in place of String class so that less objects are
 	// created, more efficient when dealing with String concatenation
 	public static StringBuilder testString = new StringBuilder();
 
+	/**
+	 * @return the log
+	 */
+	public static Logger getLog() {
+		return log;
+	}
+
 	public static void main(String[] args) {
 		// The name of the file to open.
 		// String fileNameOld = "temp.txt";
 
+		getLog().warn("warning jf");
 		// File name should include directory path and relative location
 		String fileNameRel = "src/main/resources/temp.json";
 
