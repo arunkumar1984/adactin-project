@@ -28,30 +28,28 @@ import com.sqa.av.helpers.*;
  */
 public class ResizeTest extends BasicTest {
 	public ResizeTest() {
-		super ("http://jqueryui.com/resizable/");
+		super("http://jqueryui.com/resizable/");
 	}
 
 	@Test
-	public void resizeTest() throws InterruptedException() {
+	public void resizeTest() throws InterruptedException {
 		getDriver().get("https://jqueryui.com/resizable/");
-		
+
 		// Switch to working frame
-		getDriver.switchTo().frame(0);
-		
+		getDriver().switchTo().frame(0);
+
 		// Check for element
-		if(isElementPresent(getDriver().findElement(By.ClassName("ui-resizable-se"))))
-				{
-				System.out.println("Handle present");
-			}
-		
-		
-		Actions builder = new Actions(driver);
-		builder.clickAndHold(findElement(By.ByClassName("ui-resizable-se")).moveByOffset(50,50).release());
-		
+		if (isElementPresent(By.className("ui-resizable-se"))) {
+			System.out.println("Handle present");
+		}
+
+		Actions builder = new Actions(getDriver());
+		builder.clickAndHold(getDriver().findElement(By.className("ui-resizable-se"))).moveByOffset(50, 50).release();
+
 		// Generate the composite action.
 		Action moveResizeHandles = builder.build();
-		// Perform the compositeAction 
+		// Perform the compositeAction
 		moveResizeHandles.perform();
-		
+
 	}
 }
