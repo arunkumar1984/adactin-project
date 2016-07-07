@@ -1,6 +1,6 @@
-# Automation Project (AV-AUTO-PROJECT branch)
+* Adactin Automation Project *
 
-* Basic Automation Project Structure*
+* Basic Automation Project Structure to test Adactin Hotel App*
 
 **Java 7**
 
