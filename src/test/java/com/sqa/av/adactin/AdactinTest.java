@@ -41,7 +41,7 @@ public class AdactinTest extends BasicTest {
 	@Test
 	public void adactinTest() throws InterruptedException {
 		String expectedTitle = "AdactIn.com - Search Hotel";
-		AdactinHomePage home = new AdactinHomePage(getDriver());
+		AdactinHome home = new AdactinHome(getDriver());
 		home.loginToWebsite();
 		WebElement myDynamicElement = (new WebDriverWait(getDriver(), 10))
 				.until(ExpectedConditions.presenceOfElementLocated(By.id("myDynamicElement")));
