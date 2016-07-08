@@ -25,8 +25,8 @@ import org.openqa.selenium.support.*;
  * @since 1.0
  *
  */
-public class BasicPageObject {
-	public BasicPageObject(WebDriver driver) {
+public class BasicPage {
+	public BasicPage(WebDriver driver) {
 		PageFactory.initElements(driver, this);
 	}
 
