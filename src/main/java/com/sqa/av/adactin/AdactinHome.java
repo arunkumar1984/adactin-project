@@ -27,18 +27,21 @@ import com.sqa.av.core.*;
  * @since 1.0
  *
  */
-public class AdactinHomePage extends BasicPageObject {
+public class AdactinHome extends BasicPage {
+
+	private static String password = "iamarun";
+	private static String username = "arun17kumar";
 
 	@FindBy(id = "login")
 	private static WebElement loginButton;
-	private static String password = "HYMNI1";
+
 	@FindBy(id = "password")
 	private static WebElement passwordField;
-	private static String username = "SQABCMar21";
+
 	@FindBy(id = "username")
 	private static WebElement usernameField;
 
-	public AdactinHomePage(WebDriver driver) {
+	public AdactinHome(WebDriver driver) {
 		super(driver);
 	}
 
