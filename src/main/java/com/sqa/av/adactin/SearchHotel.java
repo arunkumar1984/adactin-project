@@ -11,6 +11,7 @@
 package com.sqa.av.adactin;
 
 import org.openqa.selenium.*;
+import org.openqa.selenium.support.*;
 
 import com.sqa.av.core.*;
 
@@ -26,13 +27,44 @@ import com.sqa.av.core.*;
  * @since 1.0
  *
  */
-public class SearchHotelPage extends BasicPageObject {
+public class SearchHotel extends BasicPage {
+
+	@FindBy(id = "location")
+	private static WebElement locationFld;
+
+	@FindBy(id = "hotels")
+	private static WebElement hotelsFld;
+
+	@FindBy(id = "room_type")
+	private static WebElement roomTypeFld;
+
+	@FindBy(id = "room_nos")
+	private static WebElement roomNos;
+
+	@FindBy(id = "datepick_in")
+	private static WebElement datePickInFld;
+
+	@FindBy(id = "datepick_out")
+	private static WebElement datePickOutFld;
+
+	@FindBy(id = "adultroom")
+	private static WebElement adultRoomFld;
+
+	@FindBy(id = "childroom")
+	private static WebElement childRoomFld;
+
+	@FindBy(id = "Submit")
+	private static WebElement submitBtn;
+
+	@FindBy(id = "Reset")
+	private static WebElement resetBtn;
 
 	/**
 	 * @param driver
 	 */
-	public SearchHotelPage(WebDriver driver) {
+	public SearchHotel(WebDriver driver) {
 		super(driver);
+		// TODO Auto-generated constructor stub
 	}
 
 }
